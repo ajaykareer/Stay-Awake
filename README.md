@@ -34,7 +34,7 @@ This uses the [Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/W
 
 ## ✨ Demo Preview
 
-![Stay Awake Demo Screenshot]https://i.postimg.cc/hGgfyFpy/Screenshot-2025-04-07-at-1-07-12-PM.png
+![Stay Awake Demo Screenshot](https://i.postimg.cc/hGgfyFpy/Screenshot-2025-04-07-at-1-07-12-PM.png)
 
 ---
 

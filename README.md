@@ -14,7 +14,7 @@ This uses the [Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/W
 ## 🚀 How to Use
 1. Open [index.html](./index.html) in any modern browser.
 2. Or visit the live site:  
-   👉 https://yourusername.github.io/stay-awake/
+   👉 https://stayawake.netlify.app/
 3. Leave the tab open — that’s it!
 
 ## 📱 Ideal For
@@ -34,7 +34,7 @@ This uses the [Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/W
 
 ## ✨ Demo Preview
 
-![Stay Awake Demo Screenshot](https://via.placeholder.com/800x400.png?text=Stay+Awake+Demo)
+![Stay Awake Demo Screenshot]https://i.postimg.cc/hGgfyFpy/Screenshot-2025-04-07-at-1-07-12-PM.png
 
 ---
 

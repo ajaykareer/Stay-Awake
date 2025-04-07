@@ -13,18 +13,21 @@
       font-family: Arial, sans-serif;
       font-size: 2rem;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      text-align: center;
       position: relative;
     }
 
     .credit {
       position: absolute;
       bottom: 20px;
-      font-size: 0.9rem;
-      color: #888;
+      font-size: 1rem;
+      color: #bbb;
       font-style: italic;
+      text-align: center;
+      width: 100%;
     }
 
     video {
@@ -35,11 +38,12 @@
 <body>
   <div>Stay Awake 😴❌</div>
 
-  <!-- Hidden video keeps iPhone awake -->
-  <video autoplay muted loop playsinline>
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-  </video>
+  <!-- Subtle, fixed credit line -->
+  <div class="credit">✨ This tiny tweak is created by <strong>Ajay Kareer</strong></div>
 
-  <div class="credit">✨ This tiny trick is created by <strong>Ajay Kareer</strong></div>
+  <!-- Hidden 1-sec black video to keep screen on (iPhone-friendly) -->
+  <video autoplay muted loop playsinline>
+    <source src="https://cdn.jsdelivr.net/gh/chatgpt-ajay/files/black-loop.mp4" type="video/mp4">
+  </video>
 </body>
 </html>

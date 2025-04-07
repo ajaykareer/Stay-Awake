@@ -1,31 +1,36 @@
 # 💤 Stay Awake – Prevent Screen Lock
 
-A tiny and powerful web page that keeps your screen **awake** using the Wake Lock API. Perfect for office devices where screen timeout settings are restricted (like some iPhones 😤).
+A tiny and powerful web page that keeps your screen **awake** using a smart video loop trick. Perfect for laptops, Android, and office desktops where screen timeout settings are annoying. 🙄
 
 ## 🌟 Features
-- Keeps your phone or computer screen on.
+- Keeps your phone or computer screen on using a looping video.
 - No downloads, no ads, just one clean HTML file.
 - Centered message: `Stay Awake 😴❌`
 - Fully responsive and dark-mode friendly.
+- Works automatically – no tap required.
 
 ## 🛠 How it Works
-This uses the [Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/Wake_Lock_API) to prevent your screen from sleeping. It requests a lock on the screen when you open the page in your browser.
+This page auto-plays a hidden 1-second black video on loop to prevent your device from sleeping. The technique works on most modern browsers and devices **except iPhones**.
+
+> ⚠️ **iOS Note**:  
+> Due to restrictions in iOS (especially iOS 16+), this solution does **not** prevent screen dimming on iPhones. Safari blocks background video and JavaScript-based wake mechanisms unless full-screen video or physical input is used. Consider using a physical screen tapper for iOS devices.
 
 ## 🚀 How to Use
 1. Open [index.html](./index.html) in any modern browser.
 2. Or visit the live site:  
    👉 https://stayawake.netlify.app/
-3. Leave the tab open — that’s it!
+3. Leave the tab open and your screen won’t lock!
 
 ## 📱 Ideal For
-- Office phones with restricted settings.
-- Watching data dashboards.
-- Coding/reading without the screen going dark.
-- DIY touch tapper testing.
+- Laptops and desktops
+- Android devices
+- Watching dashboards or reading long docs
+- Preventing lockouts during Zoom or Teams calls
+- DIY screen tapping robot experiments for iOS
 
-## ⚠️ Note
-- Some browsers or locked-down devices may block the Wake Lock API.
-- Keep your phone plugged in if using this for long durations.
+## ⚠️ Limitations
+- **iPhones**: iOS Safari blocks background autoplay and Wake Lock API – screen will still dim 😤
+- **Power saving settings** on some laptops may override browser behavior — tweak OS settings if needed
 
 ## 💻 Tech Stack
 - Pure HTML

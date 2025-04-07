@@ -12,28 +12,11 @@
       background-color: #111;
       color: #fff;
       font-family: Arial, sans-serif;
-      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-
-    #startButton {
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 8px;
-      background: #fff;
-      color: #111;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-
-    video {
-      width: 100vw;
-      height: 1px;
-      opacity: 0;
+      text-align: center;
     }
 
     .credit {
@@ -43,26 +26,41 @@
       color: #bbb;
       font-style: italic;
     }
+
+    video {
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   </style>
 </head>
 <body>
   <div>Stay Awake 😴❌</div>
-  <button id="startButton">Tap to Stay Awake</button>
 
-  <video id="wakeVideo" muted loop playsinline>
+  <!-- Hidden video to keep screen awake -->
+  <video id="wakeVideo" autoplay muted loop playsinline>
     <source src="https://cdn.jsdelivr.net/gh/chatgpt-ajay/files/black-loop.mp4" type="video/mp4">
   </video>
 
   <div class="credit">✨ This tiny tweak is created by <strong>Ajay Kareer</strong></div>
 
   <script>
-    const button = document.getElementById('startButton');
     const video = document.getElementById('wakeVideo');
 
-    button.addEventListener('click', () => {
-      video.play();
-      button.style.display = 'none'; // Hide button after click
-    });
+    // Attempt to force play the video in case browser hesitates
+    const tryPlay = () => {
+      video.play().then(() => {
+        console.log("Wake video playing ✅");
+      }).catch(err => {
+        console.warn("Autoplay failed:", err);
+      });
+    };
+
+    document.addEventListener("DOMContentLoaded", tryPlay);
+    document.addEventListener("click", tryPlay); // fallback
   </script>
 </body>
 </html>

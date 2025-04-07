@@ -33,8 +33,7 @@ This uses the [Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/W
 - Inline CSS (no frameworks needed)
 
 ## ✨ Demo Preview
-
-![Stay Awake Demo Screenshot][https://i.postimg.cc/hGgfyFpy/Screenshot-2025-04-07-at-1-07-12-PM.png](https://postimg.cc/cv9xCzqw)
+<a href='https://postimg.cc/cv9xCzqw' target='_blank'><img src='https://i.postimg.cc/cv9xCzqw/Screenshot-2025-04-07-at-1-07-12-PM.png' border='0' alt='Screenshot-2025-04-07-at-1-07-12-PM'/></a>
 
 ---
 
